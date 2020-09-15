@@ -26,7 +26,7 @@ button {
     text-decoration: underline;
 }
 
-/---Media Queries---/
+/*---Media Queries---*/
 @media screen and (max-width: 1000px) {
     body {
 

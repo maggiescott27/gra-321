@@ -1,3 +1,10 @@
+* {
+
+}
+
+h1 {
+
+}
 body{
 background-color: LavenderBlush;
 
@@ -6,17 +13,15 @@ background-color: LavenderBlush;
 
 
 button {
-    background-color:#000000;
     border: none;
-    color:slategrey;
-    font-family:Arial, sans-serif;
-    text-transform: uppercase;
+    color:white;
+    background-color: slategrey;
     padding: 1em 2em 1em 2em;
 }
 
 
-padding-hover:hover {
-    background-color: black;
+.padding-hover:hover {
+    background-color: slategrey;
     color:white;
     text-decoration: underline;
 }

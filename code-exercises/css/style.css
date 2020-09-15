@@ -1,7 +1,70 @@
-* {
-background-color: AliceBlue;
+body{
+background-color: LavenderBlush;
+
 }
+
+
+
+button {
+  border: none;
+  color: white;
+  background-color: #4CAF50;
+  padding:1em 2em 1em 2em;
+}
+
+
+.padding-hover:hover {
+    background-color: Snow;
+    color:white;
+    text-decoration: underline;
+}
+
+/*---Media Queries---*/
+@media screen and (max-width: 1000px) {
+    body {
+
+        background-color: PeachPuff;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: Lavender;
+    }
+}
+
+
+
 
 h1 {
+  color: #fff;
+  font-size:52px;
+  position: relative;
+  text-align: center;
 
 }
+.container {
+
+    background-image: url
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 700px;
+    margin:0 auto;
+    width:50%;
+  }
+  .layout {
+
+      background-image: url
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 700px;
+      margin:0 auto;
+      width:50%;
+    }
+
+    h2 {font-family: Franklin Gothic;
+        color:#fff;
+        font-size:52px;
+        position: relative;
+        text-align: center;
+    }

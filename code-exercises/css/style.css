@@ -46,7 +46,7 @@ h1 {font-family: Helvetica;
 
 }
 .container {
-    background-image: url("https://maggiescott27.github.io/gra-321/code-exercises/img/IMG_9782.JPG");
+    background-image: url("https://maggiescott27.github.io/gra-321/code-exercises/img/reilly.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     height: 700px;
@@ -58,9 +58,9 @@ h1 {font-family: Helvetica;
       background-image: url("https://maggiescott27.github.io/gra-321/code-exercises/img/crateandbarrellayout.png");
       background-size: contain;
       background-repeat: no-repeat;
-      height: 700px;
+      height: 500px;
       margin:0 auto;
-      width:50%;
+      width:40%;
     }
 
     h2 {font-family: Helvetica;

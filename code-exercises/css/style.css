@@ -7,14 +7,14 @@ background-color: LavenderBlush;
 
 button {
   border: none;
-  color: white;
+  color: black;
   background-color: #4CAF50;
   padding:1em 2em 1em 2em;
 }
 
 
 .padding-hover:hover {
-    background-color: Snow;
+    background-color: black;
     color:white;
     text-decoration: underline;
 }
@@ -37,7 +37,8 @@ button {
 
 
 h1 {
-  color: #fff;
+  font-family: Franklin Gothic
+  color: #000;
   font-size:52px;
   position: relative;
   text-align: center;

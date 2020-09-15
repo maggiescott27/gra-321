@@ -45,7 +45,7 @@ h1 {
 }
 .container {
 
-    background-image: url
+    background-image: url image(https://raw.githubusercontent.com/maggiescott27/gra-321/master/code-exercises/img/IMG_9782.JPG);
     background-size: contain;
     background-repeat: no-repeat;
     height: 700px;

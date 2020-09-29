@@ -9,73 +9,79 @@ body{
 background-color: Lavender;
 
 }
-.magic{
+body.background{
 background-color: Lavender;
 
 }
 
+a button{
+  color: white;
+  background color: slategrey;
+  border: white;
+}
 button {
-  border: none;
-  color: white;
-  background-color: SlateGrey;
-  padding:1em 2em 1em 2em;
+  border: none;
+  color: white;
+  background-color: SlateGrey;
+  padding:1em 2em 1em 2em;
 }
 
 .padding-hover:hover {
-    background-color: SlateGrey;
-    color:white;
-    text-decoration: underline;
+    background-color: SlateGrey;
+    color:white;
+    text-decoration: underline;
 }
 
-/*---Media Queries---*/
-@media screen and (max-width: 1000px) {
-    body {
-        background-color: PeachPuff;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    body {
-        background-color: LightGrey;
-    }
-}
 
 
 h1 {font-family: Helvetica;
-  color: white;
-  font-size:52px;
-  position: relative;
-  text-align: center;
-  background-color: Lavender;
+  color: white;
+  font-size:52px;
+  position: relative;
+  text-align: center;
+  background-color: Lavender;
 
 }
 .container {
-    background-image: url("https://maggiescott27.github.io/gra-321/code-exercises/img/reilly.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 500px;
-    margin:0 auto;
-    width:50%;
-  }
+    background-image: url("https://maggiescott27.github.io/gra-321/code-exercises/img/reilly.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin:0 auto;
+    width:50%;
+  }
 
-  .layout {
-      background-image: url("https://maggiescott27.github.io/gra-321/code-exercises/img/crateandbarrellayout.png");
+  .layout {
+      background-image: url("https://maggiescott27.github.io/gra-321/code-exercises/img/crateandbarrellayout.png");
       background-image: url("https://maggiescott27.github.io/gra-321/code-exercises/img/mobileview.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      height: 500px;
-      margin:0 auto;
-      width:40%;
-    }
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 500px;
+      margin:0 auto;
+      width:40%;
+    }
 
-    h2 {font-family: Helvetica;
-        color:White;
-        font-size:52px;
-        position: relative;
-        text-align: center;
-    }
+    h2 {font-family: Helvetica;
+        color:White;
+        font-size:52px;
+        position: relative;
+        text-align: center;
+    }
     .reilly {
       position: absolute;
       top: 150px;
       left:20px;
     }
+
+/*---Media Queries---*/
+@media screen and (max-width: 1000px) {
+  body.background {
+    background-color: PeachPuff;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body.background {
+    background-color: LightGray;
+  }
+}

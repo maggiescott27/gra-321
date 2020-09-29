@@ -9,6 +9,10 @@ body{
 background-color: Lavender;
 
 }
+.magic{
+background-color: Lavender;
+
+}
 
 button {
   border: none;
@@ -23,7 +27,7 @@ button {
     text-decoration: underline;
 }
 
-/---Media Queries---/
+/*---Media Queries---*/
 @media screen and (max-width: 1000px) {
     body {
         background-color: PeachPuff;
@@ -49,7 +53,7 @@ h1 {font-family: Helvetica;
     background-image: url("https://maggiescott27.github.io/gra-321/code-exercises/img/reilly.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 700px;
+    height: 500px;
     margin:0 auto;
     width:50%;
   }

@@ -2,6 +2,96 @@
 
 }
 
-h1 {
+body{
+    background-color: #FFEFD5;
+
 
 }
+#slider {
+  display:flex;
+  justify-content: center;
+
+}
+input {
+  position: absolute;
+display:none;
+  cursor: pointer;
+}
+
+label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: solid 2px teal;
+  border-radius: 999px;
+  background-color: transparent;
+  z-index: 2;
+  cursor: pointer;
+}
+
+input:checked + label{
+  background-color: white;
+}
+
+.slide {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+}
+
+input:checked ~ .slide {
+  transform: translateX(100%);
+}
+
+input:checked + label + .slide {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.bg1{
+  background-image: url(https://github.com/maggiescott27/gra-321/responsive-project/img/threecups.jpeg);
+}
+.bg2{
+  background-image: url(https://github.com/maggiescott27/gra-321/responsive-project/img/coffeebeans.jpeg);
+}
+.nav-bar {
+  font-family: Helvetica;
+  width: 100%;
+  background-color: #DB7093;
+  text-align: center;
+  padding: 5px auto;
+}
+
+.nav-bar a p {
+  width:100%;
+  color: #855A5A;
+  text-decoration: none;
+}
+.gallery-pictures {
+  align-items: center;
+  padding: 10px;
+}
+@media only screen and (min-width:400px) {
+  .nav-bar {
+  display: flex;
+  justify-content: space-around;}
+}
+h1 {font-family:Helvetica;
+    color: Black;
+    font-size:30px
+    position: relative;
+    text-align: center;
+
+  }
+  p {font-family:Helvetica;
+    color: Black;
+    font-size:20px
+    position: relative;
+    text-align: center;

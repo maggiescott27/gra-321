@@ -63,10 +63,10 @@ input:checked + label + .slide {
 }
 
 .bg1{
-  background-image: url(https://github.com/maggiescott27/gra-321/responsive-project/img/threecups.jpeg);
+  background-image: url("https://github.com/maggiescott27/gra-321/responsive-project/img/threecups.jpeg");
 }
 .bg2{
-  background-image: url(https://github.com/maggiescott27/gra-321/responsive-project/img/coffeebeans.jpeg);
+  background-image: url("https://github.com/maggiescott27/gra-321/responsive-project/img/coffeebeans.jpeg");
 }
 .nav-bar {
   font-family: Helvetica;
@@ -87,6 +87,10 @@ input:checked + label + .slide {
     margin-right: auto;
     width:70%;
     padding: 30px;
+}
+.gallery-pictures img {
+  padding-top: 10px;
+
 }
 @media only screen and (min-width:400px) {
   .nav-bar {
@@ -137,4 +141,33 @@ h1 {font-family:Helvetica;
   margin-left: auto;
   margin-right: auto;
   width:50%;
+}
+.iced-drinks, .hot-drinks, .intro {
+  width:85%;
+  margin: 0 auto;
+  color:
+}
+
+ .menu-item-row {
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  padding: 0 0 1rem 0;
+}
+
+.menu-item-row p {
+  width:30%;
+}
+
+.menu-item-row ul {
+  width:60%;
+  list-style-type: none;
+  float: right;
+  text-align:right;
+}
+
+.menu-item-row ul li {
+  width:30%;
+  display:inline-block;
 }

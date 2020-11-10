@@ -13,61 +13,148 @@ body{
   margin-right: auto;
   width:20%;
 }
+/* New Slider CSS Begin */
 
-#slider {
-  display:flex;
-  justify-content: center;
-
-}
-input {
-  position: absolute;
-  display:none;
-  cursor: pointer;
+.carousel {
+    position: relative;
+    margin-top: 26px;
 }
 
-label {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border: solid 2px teal;
-  border-radius: 999px;
-  background-color: transparent;
-  z-index: 2;
-  cursor: pointer;
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  height:400px;
 }
 
-input:checked + label{
-  background-color: white;
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
 }
 
-.slide {
-  position: absolute;
-  background-position: center;
+.image-1 {
+background-image: url("https://maggiescott27.github.io/gra-321/responsive-project/img/threecups.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 50%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 1;
+ background-position: center center;
+}
+.image-2 {
+background-image: url("https://maggiescott27.github.io/gra-321/responsive-project/img/coffeebeans.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+ background-position: center center;
+}
+.image-3 {
+background-image: url(https://maggiescott27.github.io/gra-321/responsive-project/img/coffeebeans.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+ background-position: center center;
 }
 
-input:checked ~ .slide {
-  transform: translateX(100%);
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+  height:500px;
 }
 
-input:checked + label + .slide {
-  transform: translateX(0);
-  opacity: 1;
+
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
 }
 
-.bg1{
-  background-image: url("https://github.com/maggiescott27/gra-321/responsive-project/img/threecups.jpeg");
+.carousel-control.prev {
+    left: 2%;
 }
-.bg2{
-  background-image: url("https://github.com/maggiescott27/gra-321/responsive-project/img/coffeebeans.jpeg");
+
+.carousel-control.next {
+    right: 2%;
 }
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+bottom:2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+/* New Slider CSS End */
+
+
+
+
+
+
+
+
+
 .nav-bar {
   font-family: Helvetica;
   width: 100%;
@@ -85,11 +172,14 @@ input:checked + label + .slide {
   display: block;
     margin-left: auto;
     margin-right: auto;
-    width:70%;
-    padding: 30px;
+    width:80%;
+
 }
 .gallery-pictures img {
-  padding-top: 10px;
+  padding-top: 15px;
+
+  margin: 30px;
+
 
 }
 @media only screen and (min-width:400px) {
@@ -112,9 +202,19 @@ h1 {font-family:Helvetica;
 }
 .menu-container{
   background-color: #F5DEB3;
-  margin: 50px;
-  padding: 30px;
+
   text-align: center;
+}
+.menu-container ul {
+
+  list-style-type: none;
+  float: center;
+  text-align:center;
+}
+
+.menu-container ul li {
+  text-align: center;
+
 }
   h2 {font-family:Helvetica;
       color: Black;
@@ -154,6 +254,8 @@ h1 {font-family:Helvetica;
   justify-content: space-between;
   align-items:flex-start;
   padding: 0 0 1rem 0;
+  background-color: #F5DEB3;
+
 }
 
 .menu-item-row p {
@@ -170,4 +272,9 @@ h1 {font-family:Helvetica;
 .menu-item-row ul li {
   width:30%;
   display:inline-block;
+}
+.menu-item-row h2 {
+  background-color: #F5DEB3;
+  text-align: center;
+  width: 30%;
 }

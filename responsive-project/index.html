@@ -10,7 +10,7 @@
     <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>
     <div class="logo">
-      <img src = "./img/charliescafe.png" width='150' class="center"/>
+      <img src = "https://maggiescott27.github.io/gra-321/responsive-project/img/charliescafe.png" width="150" class="center"/>
     </div>
     <div class="nav-bar">
       <a href="#about-anchor"><p>About</p></a>
@@ -18,38 +18,62 @@
       <a href="#menu-anchor"><p>Menu</p></a>
       <a href="#locations-anchor"><p>Locations</p></a>
     </div>
-    <section id=#slider>
-<input type="radio" id="trigger1" name="slider">
-<label for="trigger1"></label>
-<img src = "./img/threecups.jpeg" width='500'/>
-<div class="slide bg1"></div>
 
-<input type="radio" id="trigger2" name="slider" checked autofocus>
-<img src = "./img/coffeebeans.jpeg" width='500'/>
-<label for="trigger2"></label>
-
-<div class="slide bg2">
+  <!-- New Slider Begin -->
+  <div class="carousel">
+    <div class="carousel-inner">
+        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item image-1">
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item image-2">
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item image-3">
+        </div>
+        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+        <label for="carousel-2" class="carousel-control next control-1">›</label>
+        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+        <label for="carousel-3" class="carousel-control next control-2">›</label>
+        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+        <label for="carousel-1" class="carousel-control next control-3">›</label>
+        <ol class="carousel-indicators">
+            <li>
+                <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+        </ol>
+    </div>
 </div>
-  </slider>
-  <section id ="about-anchor">
+  <!-- End New Slider -->
+   <section id ="about-anchor">
     <h1>About</h1>
     <p>Charlie's Café, one of Sun Devil Dining’s local restaurant partners, brings the taste of Europe to ASU!
       Proudly serving Lavazza Italian espresso and featuring fresh European sandwiches and baked goods.
       Come experience the difference! With three locations on campus, there is always a Charlie's Cafe near!
       Charlie’s Café is located at the Hayden Library, Bio Design B Building and the College of Design.</p>
   </section>
+
   <section id ="gallery-anchor">
     <h1>Gallery</h1>
   </section>
     <div class="gallery-pictures">
-      <img src = "./img/hot coffee.jpeg" width='300' class="center"/>
-      <img src = "./img/icedcoffee.jpeg" width='300' class="center"/>
-      <img src = "./img/panini.jpeg" width='300' class="center"/>
+      <img src = "https://maggiescott27.github.io/gra-321/responsive-project/img/hot%20coffee.jpeg" width="300" class="center"/>
+      <img src = "https://maggiescott27.github.io/gra-321/responsive-project/img/icedcoffee.jpeg" width="300" class="center"/>
+      <img src = "https://maggiescott27.github.io/gra-321/responsive-project/img/panini.jpeg" width="300" class="center"/>
     </div>
     <section id ="menu-anchor">
-      <h1>Cold Drinks</h1>
+      <h1>Menu</h1>
       <section id="drink-menu">
   <div class="cold-drinks">
+  <div class="menu-item-row">
+    <h2 class= "Cold Drinks">Cold Drinks</h2>
+  </div>
 <!--
 S M L
 -->
@@ -121,33 +145,92 @@ Menu Item
      <li>4.25</li>
      </ul>
    </div>
+   <div class="menu-item-row">
+     <h2 class= "Cold Drinks">Hot Drinks</h2>
+   </div>
+   <div class="menu-item-row">
+   <p class="drink-name">Drip Coffee</p>
+   <ul>
+     <li>2.15</li>
+     <li>2.50</li>
+     <li>2.75</li>
+     </ul>
+   </div>
+   <div class="menu-item-row">
+   <p class="drink-name">Espresso</p>
+   <ul>
+     <li>2.25</li>
+     <li>2.75</li>
+     <li>3.25</li>
+     </ul>
+   </div>
+   <div class="menu-item-row">
+   <p class="drink-name">Macchiato</p>
+   <ul>
+     <li>2.35</li>
+     <li>2.85</li>
+     <li>3.35</li>
+     </ul>
+   </div>
+   <div class="menu-item-row">
+   <p class="drink-name">Americano</p>
+   <ul>
+     <li>2.00</li>
+     <li>2.50</li>
+     <li>3.25</li>
+     </ul>
+   </div>
+   <div class="menu-item-row">
+   <p class="drink-name">Cappuccino</p>
+   <ul>
+     <li>2.95</li>
+     <li>3.50</li>
+     <li>4.25</li>
+     </ul>
+   </div>
+   <div class="menu-item-row">
+   <p class="drink-name">Cafe Latte</p>
+   <ul>
+     <li>3.55</li>
+     <li>3.95</li>
+     <li>4.75</li>
+     </ul>
+   </div>
+   <div class="menu-item-row">
+   <p class="drink-name">Cafe Mocha</p>
+   <ul>
+     <li>3.75</li>
+     <li>4.25</li>
+     <li>5.00</li>
+     </ul>
+   </div>
+   <div class="menu-item-row">
+   <p class="drink-name">Carmel Macchiato</p>
+   <ul>
+     <li>3.95</li>
+     <li>4.45</li>
+     <li>5.05</li>
+     </ul>
+   </div>
+   <div class="menu-item-row">
+   <p class="drink-name">Hot Chocolate</p>
+   <ul>
+     <li>3.25</li>
+     <li>3.75</li>
+     <li>4.25</li>
+     </ul>
+   </div>
+   <div class="menu-item-row">
+   <p class="drink-name">Chai</p>
+   <ul>
+     <li>3.25</li>
+     <li>3.95</li>
+     <li>4.25</li>
+     </ul>
+   </div>
 
     <div class="menu-container">
-      <h1>Menu</h1>
-      <h2>Cold Drinks</h2>
-      <ul>
-        <li>	Coffee  $2.75 </li>
-        <li>		Americano           $2.00    $2.50    $3.25 </li>
-        <li>		Latte                     $3.55    $3.95    $4.75 </li>
-        <li>	Mocha                  $3.75    $4.25    $5.00 </li>
-	      <li> Chai                       $3.25    $3.95    $4.25 </li>
-        <li>	Mocha Frappe                   $4.50    $5.50  </li>
-        <li>	Thai Cappuccino               $4.25  </li>
-	       <li> Thai Tea                              $3.25 </li>
-       </ul>
-       <h2>Hot Drinks</h2>
-       <ul>
-         <li>	 Drip Coffee               $2.15    $2.50    $2.75 </li>
-	       <li>  Espresso                    $2.25    $2.75    $3.25 </li>
-         <li>	 Macchiato                 $2.35    $2.85    $3.35 </li>
-	       <li>  Americano                $2.00    $2.50    $3.25 </li>
-	       <li> Cappuccino               $2.95    $3.50    $4.25 </li>
-	       <li> Caffe Latte                $3.55    $3.95    $4.75 </li>
-	       <li> Caffe Mocha             $3.75    $4.25    $5.00 </li>
-	       <li> Carmel Macchiato       $3.95    $4.45    $5.05 </li>
-	       <li> Hot Chocolate          $3.25    $3.75    $4.25 </li>
-	       <li> Chai                            $3.25    $3.95    $4.25 </li>
-        </ul>
+
         <h2>Add Ons</h2>
         <ul>
           <li> Almond Milk .75 </li>

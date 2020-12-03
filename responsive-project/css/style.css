@@ -182,7 +182,7 @@ bottom:2%;
 
 
 }
-@media only screen and (min-width:400px) {
+@media only screen and (min-width:700px) {
   .nav-bar {
   display: flex;
   justify-content: space-around;}
@@ -199,6 +199,13 @@ h1 {font-family:Helvetica;
     font-size:20px
     position: relative;
     text-align: center;
+    padding: 10px
+
+
+}
+.about-section{
+  padding-top: 10px;
+  margins: 30px;
 }
 .menu-container{
   background-color: #F5DEB3;
